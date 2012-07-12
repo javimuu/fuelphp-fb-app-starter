@@ -19,3 +19,9 @@
 [submodule "fuel/packages/email"]
 	path = fuel/packages/email
 	url = git://github.com/fuel/email.git
+[submodule "fuel/packages/sentry"]
+	path = fuel/packages/sentry
+	url = git://github.com/cartalyst/sentry-fuel.git
+[submodule "fuel/app/vendor/facebook"]
+	path = fuel/app/vendor/facebook
+	url = git://github.com/facebook/facebook-php-sdk.git
