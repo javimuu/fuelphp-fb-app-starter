@@ -30,7 +30,20 @@ class Seed
 	 */
 	public static function run()
 	{
-        return \Cli::write("Create admin user oil r seed:sentry", 'blue');
+        // Prompt the user with menu options
+        $option = \Cli::prompt('What would you like to do?', array('sentry_setup','sentry_user'));
+
+        switch($option)
+        {
+            case "sentry_setup":
+                return static::sentry_setup();
+                break;
+            case "sentry_user":
+                return static::sentry_user();
+                break;
+            default:
+                break;
+        }
 	}
 
     public static function sentry_setup()
