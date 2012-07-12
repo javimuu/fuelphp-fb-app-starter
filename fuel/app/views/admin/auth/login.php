@@ -4,22 +4,22 @@
 <?php echo Form::hidden('destination',$_GET['destination']); ?>
 <?php endif; ?>
 
-<div class="control-group<?php if ($val->errors('login')) echo ' error'; ?>">
+<div class="control-group<?php if ($val->error('login')) echo ' error'; ?>">
     <label for="login">Login:</label>
     <div class="controls">
         <?php echo Form::input('login', Input::post('login')); ?>
-        <?php if ($val->errors('login')): ?>
-        <span class="help-inline"><?php echo $val->errors('login')->get_message(); ?></span>
+        <?php if ($val->error('login')): ?>
+        <span class="help-inline"><?php echo $val->error('login')->get_message(); ?></span>
         <?php endif; ?>
     </div>
 </div>
 
-<div class="control-group<?php if ($val->errors('password')) echo ' error'; ?>">
+<div class="control-group<?php if ($val->error('password')) echo ' error'; ?>">
     <label for="password">Password:</label>
     <div class="controls">
         <?php echo Form::password('password'); ?>
-        <?php if ($val->errors('password')): ?>
-        <span class="help-inline"><?php echo $val->errors('password')->get_message(); ?></span>
+        <?php if ($val->error('password')): ?>
+        <span class="help-inline"><?php echo $val->error('password')->get_message(); ?></span>
         <?php endif; ?>
     </div>
 </div>
