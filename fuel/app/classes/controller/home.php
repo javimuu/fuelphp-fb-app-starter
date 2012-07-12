@@ -7,7 +7,7 @@ class Controller_Home extends Controller_Facebook {
 		parent::before();
 	}
 
-    public function index()
+    public function action_index()
     {
         $data = array();
 
