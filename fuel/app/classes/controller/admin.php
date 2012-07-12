@@ -11,6 +11,8 @@ class Controller_Admin extends Controller_Base {
     {
         parent::before();
 
+        \Package::load('sentry');
+
         if(Sentry::check())
         {
             $this->current_user = Sentry::user()->get('metadata');
