@@ -1,7 +1,5 @@
 <?php
 
-require_once(APPPATH . 'vendor/facebook/src/facebook.php');
-
 class Controller_Facebook extends Controller_Base {
 
     public $template = 'templates/facebook';

@@ -12,6 +12,7 @@ Autoloader::add_classes(array(
 	// Add classes you want to override here
 	// Example: 'View' => APPPATH.'classes/view.php',
     'Pagination' => APPPATH.'classes/pagination.php',
+    'Facebook' => APPPATH.'vendor/facebook/src/facebook.php',
 ));
 
 // Register the autoloader
